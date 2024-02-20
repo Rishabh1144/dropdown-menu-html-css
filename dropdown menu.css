@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("background.jpg");
+    background-size:cover;
+}
+.container{
+    width:100%;
+    height:100%;
+    /* display:flex; */
+}
+.container .nav{
+    width:100%;
+    background:green;
+    display: inline-flex;
+    justify-content: center;
+}
+.nav ul{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    width:60%;
+}
+.nav ul li{
+    width:120px;
+    margin:15px;
+    /* padding:10px; */
+    /* background:yellow; */
+    text-align: center;
+}
+.nav ul li a{
+    text-decoration:none;
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:white;
+    display: block;
+    padding:10px;
+}
+#home, .nav ul li:hover{
+    background:rgb(0,0,0,.4);
+}
+.sub-link{
+    display:none;
+}
+.nav ul li:hover .sub-link{
+    display:block;
+    position: absolute;
+    top:55px;
+    background:green;
+}
+.nav ul li:hover .sub-link ul{
+    display:block;
+}
+.sub1{
+    left:38.5%;
+}
+.sub2{
+    left:53.5%;
+}
+.sub3{
+    left:68%;
+}
+.sub-sub-link{
+    display:none;
+}
+.sub-link ul li:hover .sub-sub-link{
+    display:block;
+    position:absolute;
+    left:90%;
+    background:green;
+}
+.sub-sub1{
+    top:14%;
+}
+.sub-sub2{
+    top:28%;
+}
+.sub-sub3{
+    top:40%;
+}
+footer{
+    background:rgb(2, 53, 13);
+    color:whitesmoke;
+    text-align: center;
+    padding:15px;
+    position:absolute;
+    right:0;
+    left:0;
+    bottom:0;
+}
+.nav button{
+    width:100px;
+    height:40px;
+    font-size:1rem;
+    font-weight: bold;
+    background:whitesmoke;
+    border-radius:10px;
+    border:none;
+    color:green;
+    cursor: pointer;
+    transition: .3s ease;
+}
+button:hover{
+    background:rgb(3, 85, 3);
+    color:whitesmoke;
+}
+.buttons{
+    position: absolute;
+    right:0;
+    margin:20px 35px 0px 0px;
+}
+.nav h1{
+    position:absolute;
+    left:0;
+    margin:15px;
+    font-size: 2.5rem;
+    color:rgb(191, 248, 191);
+    -webkit-text-stroke: 2px rgb(174, 243, 162);
+    text-shadow: 0px 0px 4px black;
+}
+.main{
+    width:80%;
+    height:80%;
+    /* background:yellow; */
+    display: flex;
+    margin-left:300px;
+    gap:100px;
+    align-items: center;
+}
+.main h1{
+    font-size:45px;
+    color:beige;
+    text-align: center;
+}
+.main img{
+    width:260px;
+    border-radius:150px 150px;
+}
